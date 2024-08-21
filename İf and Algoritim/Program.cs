@@ -9,33 +9,24 @@ class Program
 
         //Verilmish ededin menfi ve ya musbet oldugunu tapan algorithm
 
-        //int number = 78;
+        int number = 78;
 
-        //if (number > 0)
-        //    Console.WriteLine($"Musbet eded: {number}");
-        //else
-        //    Console.WriteLine($"Menfi eded: {number}");
-
-
-
-
-
-
+        if (number > 0)
+            Console.WriteLine($"Musbet eded: {number}");
+        else
+            Console.WriteLine($"Menfi eded: {number}");
 
 
 
 
         //Verilmish ededin hem 3-e hem de 7-e tam bolunub bolunmediyini tapan algorithm
 
-        //int data1 = 21;
+        int data1 = 21;
 
-        //if (data1 % 3 == 0 && data1 % 7 == 0)
-        // Console.WriteLine($"Eded 3 ve 7 tam bolunur.");       
-        //else
-        // Console.WriteLine("Eded 3 ve 7 tam bolunmur.");
-
-
-
+        if (data1 % 3 == 0 && data1 % 7 == 0)
+            Console.WriteLine($"Eded 3 ve 7 tam bolunur.");
+        else
+            Console.WriteLine("Eded 3 ve 7 tam bolunmur.");
 
 
 
