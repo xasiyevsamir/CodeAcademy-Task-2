@@ -7,41 +7,55 @@ class Program
     static void Main(string[] args)
     {
 
-        //Verilmish ededin menfi ve ya musbet oldugunu tapan algorithm
 
-        int number = 78;
+        A(20);
+        B(21);
+        C(45468967);
+
+    }
+
+
+    static void A(int number)
+    {
+        //Verilmish ededin menfi ve ya musbet oldugunu tapan algorithm
 
         if (number > 0)
             Console.WriteLine($"Musbet eded: {number}");
         else
             Console.WriteLine($"Menfi eded: {number}");
+    }
 
 
 
 
+
+    static void B(int number)
+    {
         //Verilmish ededin hem 3-e hem de 7-e tam bolunub bolunmediyini tapan algorithm
 
-        int data1 = 21;
-
-        if (data1 % 3 == 0 && data1 % 7 == 0)
-            Console.WriteLine($"Eded 3 ve 7 tam bolunur.");
+        if (number % 3 == 0 && number % 7 == 0)
+            Console.WriteLine($"{number} ededi 3 ve 7 tam bolunur.");
         else
-            Console.WriteLine("Eded 3 ve 7 tam bolunmur.");
+            Console.WriteLine($"{number} ededi 3 ve 7 tam bolunmur.");
+    }
 
 
 
+    static void C(int number)
+    {
         //Verilmish 2 mertebeli ededin en boyuk reqemini tapan algorithm misal: input 25, output 5
 
-        int data = 98, temp = 0, num;
+        int temp = 0, residue, data=number;
 
-        while (data > 0)
+        while (number > 0)
         {
-            num = data % 10;
+            residue = number % 10;
 
-            if (num > temp)
-                temp = num;
-            data /= 10;
+            if (residue > temp)
+                temp = residue;
+            number /= 10;
         }
-        Console.WriteLine(temp);
+        Console.WriteLine($"{data} ededinin en boyuk reqemi:{temp}");
     }
+
 }
