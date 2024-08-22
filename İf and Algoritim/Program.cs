@@ -8,9 +8,9 @@ class Program
     {
 
 
-        A(20);
-        B(21);
-        C(45468967);
+        //A(20);
+        //B(21);
+        C(46498567);
 
     }
 
@@ -45,15 +45,15 @@ class Program
     {
         //Verilmish 2 mertebeli ededin en boyuk reqemini tapan algorithm misal: input 25, output 5
 
-        int temp = 0, residue, data=number;
+        int temp = 0, residue, data = number;
 
-        while (number > 0)
+    l1: if (number > 0)
         {
             residue = number % 10;
-
+            number /= 10;
             if (residue > temp)
                 temp = residue;
-            number /= 10;
+            goto l1;
         }
         Console.WriteLine($"{data} ededinin en boyuk reqemi:{temp}");
     }
